@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+  box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.Logoimg img{
+  height: 75px;
+  width: auto;
+  object-fit: contain;
+  margin-left: 20px;
+}
+
+nav>div{
+  min-width: 110px;
+}
+
+.username{
+  padding: 14px 18px;
+  border-radius: 16px;
+  color: rgb(73, 184, 253);
+  background-color: rgb(190, 252, 252);
+  margin-right: 15px;
+}
+
+header>nav>div>a{
+  color: gray;
+  text-decoration: none;
+}
+
+header>nav>div>a:visited{
+  color: gray;
+}
+
+header>nav>div>a:hover{
+  color: rgb(73, 184, 253);
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.left>h1{
+  color: rgb(75, 75, 75);
+}
+.left>h2{
+  color: rgb(0, 110, 255);
+}
+.left>p{
+  color: gray;
+}
+.left>button{
+  padding: 14px 18px;
+  border-radius: 16px;
+  border: none;
+  color: white;
+  background-color: rgb(73, 184, 253);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.left>button:hover{
+  background-color: rgb(0, 110, 255);
+  color: black;
+
+}
