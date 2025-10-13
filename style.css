@@ -464,3 +464,201 @@ footer{
 .f-i-h4{
   margin-bottom: 10px;
 }
+
+/* ------ Medium Screens (Tablet: 900px and below) ------ */
+@media (max-width: 900px) {
+  .cart-section {
+    flex-direction: column;
+    margin: 30px 5vw;
+  }
+  .c-left, .c-right {
+    width: 95vw;
+    border-radius: 20px;
+    margin-bottom: 25px;
+  }
+  .Description-Section, .Newsletter, .Service-Overview, footer {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    width: 100vw;
+    gap: 15px;
+    padding: 12px 0;
+  }
+  .O-ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .d-items {
+    max-width: 100% !important;
+    width: 90vw;
+    margin-bottom: 12px;
+    justify-content: flex-start;
+  }
+}
+
+/* ------ Small Screens (Mobile: 600px and below) ------ */
+@media (max-width: 600px) {
+  header, nav.container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 0;
+    gap: 6px;
+  }
+  .Logoimg img {
+    height: 48px;
+    margin-left: 6px;
+  }
+  .username {
+    margin: 10px 0 0 0;
+    font-size: 0.95em;
+    padding: 10px 12px;
+  }
+  nav > div {
+    min-width: unset;
+    width: 100%;
+    text-align: left;
+  }
+  .hero-section {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 18px;
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+  .left, .right {
+    width: 100%;
+    text-align: left;
+  }
+  .O-left > h2 {
+    font-size: 1.4em;
+    margin: 8px 0;
+  }
+  .O-ul > li {
+    font-size: 1em;
+    border-right: none;
+    padding-right: 0;
+  }
+  .cart-section, .Service-Overview, .Newsletter, .Description-Section, footer {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+    width: 100vw;
+    gap: 14px;
+  }
+  .c-left, .c-right, .d-items {
+    width: 98vw;
+    border-radius: 12px;
+    margin-bottom: 14px;
+  }
+  .booking-form input,
+  .booking-form .email-phone-row input {
+    padding: 8px;
+    font-size: 0.99em;
+  }
+  .footer-icons ion-icon {
+    font-size: 1.1em;
+    margin: 0 3px;
+  }
+  .Newsletter > .n-left > h2,
+  .c-left-heading h2 {
+    font-size: 1.1em;
+    border-bottom-width: 1px;
+  }
+  .n-form, .n-s-btn {
+    width: 90vw;
+    font-size: 1em;
+    margin: 4px 0;
+    padding: 6px 8px;
+  }
+  .n-s-btn {
+    padding: 8px 32px;
+  }
+}
+
+/* Default - Side by Side */
+nav.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Individual link boxes stay side by side */
+nav > div {
+  display: inline-block; /* Ensures horizontal alignment */
+  min-width: 110px;
+}
+
+@media (max-width: 600px) {
+  nav.container {
+    flex-direction: column; /* Now stack ONLY on very small screens */
+    align-items: flex-start;
+    gap: 6px;
+  }
+  nav > div {
+    width: 100% !important;
+    min-width: unset;
+    margin-bottom: 5px;
+  }
+}
+
+.email-phone-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* Allow wrapping to new line on small screens */
+}
+
+.email-phone-row input {
+  flex: 1 0 47%; /* Grow, shrink, min width 47% for side by side */
+  min-width: 120px;
+  box-sizing: border-box;
+}
+
+/* Ensure full width on tiny screens */
+@media (max-width: 480px) {
+  .email-phone-row input {
+    flex: 1 0 100%;
+    min-width: unset;
+    margin-bottom: 5px;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: row; /* Side by side by default */
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: white;
+  width: 100vw;
+  height: auto;
+  gap: 12px;
+}
+footer > div {
+  min-width: 180px;
+  max-width: 24vw;
+}
+
+/* More narrow but still not stacking until very tiny screens */
+@media (max-width: 950px) {
+  footer > div {
+    max-width: 46vw;
+    min-width: 120px;
+  }
+}
+
+/* Stack only at mobile widths */
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+    gap: 8px;
+  }
+  footer > div {
+    max-width: 98vw;
+    min-width: unset;
+  }
+}
