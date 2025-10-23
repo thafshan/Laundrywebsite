@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Use your EmailJS service ID, template ID, and user ID here
-    emailjs.send('your_service_id', 'your_template_id', templateParams)
+    emailjs.send('service_bk867mj', 'template_chbff8r', templateParams)
       .then(() => {
         confirmationMessage.textContent = 'Thank you For Booking the Service We will get back to you soon!';
         // Reset form and cart
